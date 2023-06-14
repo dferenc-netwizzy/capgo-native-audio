@@ -240,12 +240,12 @@ preload(options: PreloadOptions) => Promise<void>
 ### play(...)
 
 ```typescript
-play(options: { assetId: string; time?: number; volume?: number }) => Promise<void>
+play(options: { assetId: string; time?: number; volume?: number; }) => Promise<void>
 ```
 
-| Param         | Type                                             |
-| ------------- | ------------------------------------------------ |
-| **`options`** | <code>{ assetId: string; time?: number; volume?: number }</code> |
+| Param         | Type                                                              |
+| ------------- | ----------------------------------------------------------------- |
+| **`options`** | <code>{ assetId: string; time?: number; volume?: number; }</code> |
 
 ---
 
@@ -279,8 +279,8 @@ resume(options: { assetId: string; }) => Promise<void>
 loop(options: { assetId: string; volume?: number; }) => Promise<void>
 ```
 
-| Param         | Type                              |
-| ------------- | --------------------------------- |
+| Param         | Type                                               |
+| ------------- | -------------------------------------------------- |
 | **`options`** | <code>{ assetId: string; volume?: number; }</code> |
 
 ---
