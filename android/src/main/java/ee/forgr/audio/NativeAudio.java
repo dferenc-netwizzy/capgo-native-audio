@@ -499,13 +499,17 @@ public class NativeAudio
 
       final String audioId = call.getString(ASSET_ID);
       final Double time = call.getDouble("time", 0.0);
+      final float volume = call.getFloat(VOLUME, 1.0f);
+
       if (audioAssetList.containsKey(audioId)) {
         AudioAsset asset = audioAssetList.get(audioId);
-        if (LOOP.equals(action) && asset != null) {
-          asset.loop();
-          call.resolve();
-        } else if (asset != null) {
-          asset.play(time);
+        if( asset != null) {
+          asset.setVolume(volume);
+          if (LOOP.equals(action)) {
+            asset.loop();
+          } else {
+            asset.play(time);
+          }
           call.resolve();
         } else {
           call.reject("Error with asset");

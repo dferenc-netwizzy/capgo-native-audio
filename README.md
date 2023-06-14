@@ -121,20 +121,24 @@ NativeAudio.preload({
  * This method will play the loaded audio file if present in the memory.
  * @param assetId - identifier of the asset
  * @param time - (optional) play with seek. example: 6.0 - start playing track from 6 sec
+ * @param volume - (optional) set the volume for the track
  * @returns void
  */
 NativeAudio.play({
     assetId: 'fire',
     // time: 6.0 - seek time
+    // volume: 1 - volume for the audio
 });
 
 /**
  * This method will loop the audio file for playback.
  * @param assetId - identifier of the asset
+ * @param volume - (optional) set the volume for the track
  * @returns void
  */
 NativeAudio.loop({
   assetId: 'fire',
+  // volume: 1 - volume for the audio
 });
 
 
@@ -236,12 +240,12 @@ preload(options: PreloadOptions) => Promise<void>
 ### play(...)
 
 ```typescript
-play(options: { assetId: string; time?: number; }) => Promise<void>
+play(options: { assetId: string; time?: number; volume?: number }) => Promise<void>
 ```
 
 | Param         | Type                                             |
 | ------------- | ------------------------------------------------ |
-| **`options`** | <code>{ assetId: string; time?: number; }</code> |
+| **`options`** | <code>{ assetId: string; time?: number; volume?: number }</code> |
 
 ---
 
@@ -272,12 +276,12 @@ resume(options: { assetId: string; }) => Promise<void>
 ### loop(...)
 
 ```typescript
-loop(options: { assetId: string; }) => Promise<void>
+loop(options: { assetId: string; volume?: number; }) => Promise<void>
 ```
 
 | Param         | Type                              |
 | ------------- | --------------------------------- |
-| **`options`** | <code>{ assetId: string; }</code> |
+| **`options`** | <code>{ assetId: string; volume?: number; }</code> |
 
 ---
 

@@ -76,17 +76,19 @@ export class NativeAudioWeb extends WebPlugin implements NativeAudio {
     );
   }
 
-  async play(options: { assetId: string; time?: number }): Promise<void> {
+  async play(options: { assetId: string; time?: number, volume?: number }): Promise<void> {
     const audio: HTMLAudioElement = this.getAudioAsset(options.assetId).audio;
     await this.stop(options);
+    audio.volume = options.volume ?? 1;
     audio.loop = false;
     audio.currentTime = options.time ?? 0;
     return audio.play();
   }
 
-  async loop(options: { assetId: string }): Promise<void> {
+  async loop(options: { assetId: string, volume?: number }): Promise<void> {
     const audio: HTMLAudioElement = this.getAudioAsset(options.assetId).audio;
     await this.stop(options);
+    audio.volume = options.volume ?? 1;
     audio.loop = true;
     return audio.play();
   }

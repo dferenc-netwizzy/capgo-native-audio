@@ -21,7 +21,7 @@ export class Test {
         )
       ),
       new TestCase("play (0)", () =>
-        NativeAudio.play({ assetId: assetId, time: 0 })
+        NativeAudio.play({ assetId: assetId, time: 0, volume: 1 })
       ),
       new TestCase("pause", () => NativeAudio.pause({ assetId: assetId })),
       new TestCase("resume", () => NativeAudio.resume({ assetId: assetId })),
@@ -32,13 +32,13 @@ export class Test {
         )
       ),
       new TestCase("play (0)", () =>
-        NativeAudio.play({ assetId: assetId, time: 0 })
+        NativeAudio.play({ assetId: assetId, time: 0, volume: 1 })
       ),
       new TestCase("play (10)", () =>
-        NativeAudio.play({ assetId: assetId, time: 10 })
+        NativeAudio.play({ assetId: assetId, time: 10, volume: 1 })
       ),
       new TestCase("stop", () => NativeAudio.stop({ assetId: assetId })),
-      new TestCase("loop", () => NativeAudio.loop({ assetId: assetId })),
+      new TestCase("loop", () => NativeAudio.loop({ assetId: assetId, volume: 1 })),
       new TestCase("setVolume", () =>
         NativeAudio.setVolume({ assetId: assetId, volume: 0.5 })
       ),

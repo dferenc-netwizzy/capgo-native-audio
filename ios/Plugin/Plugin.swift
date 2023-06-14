@@ -55,6 +55,8 @@ public class NativeAudio: CAPPlugin {
     @objc func play(_ call: CAPPluginCall) {
         let audioId = call.getString(Constant.AssetIdKey) ?? ""
         let time = call.getDouble("time") ?? 0
+        let volume = call.getFloat(Constant.Volume) ?? 1.0
+        
         if audioId != "" {
             let queue = DispatchQueue(label: "ee.forgr.audio.complex.queue", qos: .userInitiated)
 
@@ -65,7 +67,7 @@ public class NativeAudio: CAPPlugin {
                     if asset != nil {
                         if asset is AudioAsset {
                             let audioAsset = asset as? AudioAsset
-
+                            audioAsset?.setVolume(volume: volume as NSNumber)
                             if self.fadeMusic {
                                 audioAsset?.playWithFade(time: time)
                             } else {
@@ -153,7 +155,9 @@ public class NativeAudio: CAPPlugin {
         guard let audioAsset: AudioAsset = self.getAudioAsset(call) else {
             return
         }
+        let volume = call.getFloat(Constant.Volume) ?? 1.0
 
+        audioAsset.setVolume(volume: volume as NSNumber)
         audioAsset.loop()
         call.resolve()
     }
