@@ -1,4 +1,4 @@
-import { NativeAudio } from "./definitions";
+import { NativeAudio } from './definitions';
 declare const NativeAudio: NativeAudio;
-export * from "./definitions";
+export * from './definitions';
 export { NativeAudio };

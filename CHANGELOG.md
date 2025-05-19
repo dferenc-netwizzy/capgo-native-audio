@@ -2,6 +2,602 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.3.28](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.27...7.3.28) (2025-05-12)
+
+### Bug Fixes
+
+- **deps:** update dependency androidx.media3:media3-ui to v1.6.1 ([#166](https://github.com/Cap-go/capacitor-native-audio/issues/166)) ([2633300](https://github.com/Cap-go/capacitor-native-audio/commit/26333007b5794ebbca479cb5b37b7f21ce33c4a3))
+
+### [7.3.27](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.26...7.3.27) (2025-05-12)
+
+### [7.3.26](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.25...7.3.26) (2025-05-05)
+
+### Bug Fixes
+
+- **deps:** update dependency androidx.media3:media3-transformer to v1.6.1 ([#163](https://github.com/Cap-go/capacitor-native-audio/issues/163)) ([4d5830d](https://github.com/Cap-go/capacitor-native-audio/commit/4d5830d7761ed5b86c5c7348b14d5d33d18d9457))
+
+### [7.3.25](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.24...7.3.25) (2025-05-05)
+
+### Bug Fixes
+
+- **deps:** update dependency androidx.media3:media3-session to v1.6.1 ([#162](https://github.com/Cap-go/capacitor-native-audio/issues/162)) ([5892b6a](https://github.com/Cap-go/capacitor-native-audio/commit/5892b6a5f7e7df67f78cd73edb39024bbdd7f947))
+
+### [7.3.24](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.23...7.3.24) (2025-04-28)
+
+### Bug Fixes
+
+- **deps:** update dependency androidx.media3:media3-exoplayer-hls to v1.6.1 ([#161](https://github.com/Cap-go/capacitor-native-audio/issues/161)) ([358c091](https://github.com/Cap-go/capacitor-native-audio/commit/358c091703946dcc8efa2a8c6f45016aa2085e0d))
+
+### [7.3.23](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.22...7.3.23) (2025-04-28)
+
+### Bug Fixes
+
+- **deps:** update dependency androidx.media3:media3-exoplayer to v1.6.1 ([#160](https://github.com/Cap-go/capacitor-native-audio/issues/160)) ([228409f](https://github.com/Cap-go/capacitor-native-audio/commit/228409f970a36f7d90ce907afe2be942c3400637))
+
+### [7.3.22](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.21...7.3.22) (2025-04-27)
+
+### Bug Fixes
+
+- remove useles layout ([d32d384](https://github.com/Cap-go/capacitor-native-audio/commit/d32d384b976ba6066951f8c8b9f3a016fb8a2411))
+
+### [7.3.21](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.20...7.3.21) (2025-04-21)
+
+### Bug Fixes
+
+- **deps:** update dependency androidx.media3:media3-database to v1.6.1 ([#159](https://github.com/Cap-go/capacitor-native-audio/issues/159)) ([b89a712](https://github.com/Cap-go/capacitor-native-audio/commit/b89a712ce88d98cb679034d6cbfad54de018d695))
+
+### [7.3.20](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.19...7.3.20) (2025-04-21)
+
+### Bug Fixes
+
+- **deps:** update dependency androidx.media3:media3-common to v1.6.1 ([#158](https://github.com/Cap-go/capacitor-native-audio/issues/158)) ([e3937cf](https://github.com/Cap-go/capacitor-native-audio/commit/e3937cf1a135409e0f4c3023156ee125713f29f1))
+
+### [7.3.19](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.18...7.3.19) (2025-04-16)
+
+### [7.3.18](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.17...7.3.18) (2025-04-14)
+
+### Bug Fixes
+
+- **deps:** update dependency androidx.media3:media3-transformer to v1.6.0 ([#156](https://github.com/Cap-go/capacitor-native-audio/issues/156)) ([881bb16](https://github.com/Cap-go/capacitor-native-audio/commit/881bb16310cf822b1073f599fd4fc282e4b60798))
+
+### [7.3.17](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.16...7.3.17) (2025-04-14)
+
+### Bug Fixes
+
+- **deps:** update dependency androidx.media3:media3-session to v1.6.0 ([#155](https://github.com/Cap-go/capacitor-native-audio/issues/155)) ([2080f09](https://github.com/Cap-go/capacitor-native-audio/commit/2080f09258866101eea874a61bcdd5e385042085))
+
+### [7.3.16](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.15...7.3.16) (2025-04-07)
+
+### Bug Fixes
+
+- **deps:** update dependency androidx.media3:media3-exoplayer-hls to v1.6.0 ([#154](https://github.com/Cap-go/capacitor-native-audio/issues/154)) ([df6e7b8](https://github.com/Cap-go/capacitor-native-audio/commit/df6e7b8a0728b28f94567312cc71d0c9eb3890e3))
+
+### [7.3.15](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.14...7.3.15) (2025-04-07)
+
+### Bug Fixes
+
+- **deps:** update dependency androidx.media3:media3-exoplayer to v1.6.0 ([#153](https://github.com/Cap-go/capacitor-native-audio/issues/153)) ([5978af4](https://github.com/Cap-go/capacitor-native-audio/commit/5978af4f958758d9f92e8ec64dde4df9ee6d05b6))
+
+### [7.3.14](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.13...7.3.14) (2025-03-31)
+
+### Bug Fixes
+
+- **deps:** update dependency androidx.media3:media3-database to v1.6.0 ([#152](https://github.com/Cap-go/capacitor-native-audio/issues/152)) ([7544470](https://github.com/Cap-go/capacitor-native-audio/commit/7544470703b173bb77b9f4be116a628a42e05395))
+
+### [7.3.13](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.12...7.3.13) (2025-03-31)
+
+### Bug Fixes
+
+- **deps:** update dependency androidx.media3:media3-common to v1.6.0 ([#151](https://github.com/Cap-go/capacitor-native-audio/issues/151)) ([cd01df3](https://github.com/Cap-go/capacitor-native-audio/commit/cd01df3add284cbd82a6046e4d7b0c8996082bb9))
+
+### [7.3.12](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.11...7.3.12) (2025-03-21)
+
+### Bug Fixes
+
+- deinit for AudioAsset ([61d615b](https://github.com/Cap-go/capacitor-native-audio/commit/61d615b90927874a3b4d8ecac713fbbdd6c43953))
+
+### [7.3.11](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.10...7.3.11) (2025-03-06)
+
+### Bug Fixes
+
+- victor issue ([c5e14e2](https://github.com/Cap-go/capacitor-native-audio/commit/c5e14e27cd8596f12f4acfb7616d22a9e13984ed))
+
+### [7.3.10](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.9...7.3.10) (2025-03-06)
+
+### Bug Fixes
+
+- lint ([e1698c7](https://github.com/Cap-go/capacitor-native-audio/commit/e1698c7b5f6322c40012c8f0385fd5954853dd3b))
+
+### [7.3.9](https://github.com/Cap-go/capacitor-native-audio/compare/7.3.8...7.3.9) (2025-03-06)
+
+### Bug Fixes
+
+- issues ([d8c8cdd](https://github.com/Cap-go/capacitor-native-audio/commit/d8c8cdd46582b87d6ea7c7c09e3baed448e2bbcc))
+- release ([a8cde5c](https://github.com/Cap-go/capacitor-native-audio/commit/a8cde5cb69acb98cb720dac858d2d2094012dc97))
+
+### [7.3.8](https://github.com/Cap-go/native-audio/compare/7.3.7...7.3.8) (2025-03-06)
+
+### Bug Fixes
+
+- npm deploy ([9b7f82a](https://github.com/Cap-go/native-audio/commit/9b7f82a12570513cca7636a1750818864cf0ad46))
+
+### [7.3.7](https://github.com/Cap-go/native-audio/compare/7.3.6...7.3.7) (2025-03-06)
+
+### Bug Fixes
+
+- remove useless file ([d31d5e8](https://github.com/Cap-go/native-audio/commit/d31d5e8a363fcfa7291ec06a7423d22b8af2cc8c))
+
+### [7.3.6](https://github.com/Cap-go/native-audio/compare/7.3.5...7.3.6) (2025-03-06)
+
+### [7.3.5](https://github.com/Cap-go/native-audio/compare/7.3.4...7.3.5) (2025-03-06)
+
+### Bug Fixes
+
+- add missing definition ([5db4ca9](https://github.com/Cap-go/native-audio/commit/5db4ca9b80317e4937ec7c8d2b9edfa4749eb98d))
+
+### [7.3.4](https://github.com/Cap-go/native-audio/compare/7.3.3...7.3.4) (2025-03-06)
+
+### Bug Fixes
+
+- url ([8b380e7](https://github.com/Cap-go/native-audio/commit/8b380e7c07b9dfdc94f16522df36050dce4cff1d))
+
+### [7.3.3](https://github.com/Cap-go/native-audio/compare/7.3.2...7.3.3) (2025-03-03)
+
+### [7.3.2](https://github.com/Cap-go/native-audio/compare/7.3.1...7.3.2) (2025-02-21)
+
+### Bug Fixes
+
+- ios session ([50787ac](https://github.com/Cap-go/native-audio/commit/50787acda7e1dc12f2b491cc225b9efa42f27f39))
+
+### [7.3.1](https://github.com/Cap-go/native-audio/compare/7.3.0...7.3.1) (2025-02-18)
+
+## [7.3.0](https://github.com/Cap-go/native-audio/compare/7.2.1...7.3.0) (2025-02-18)
+
+### Features
+
+- add event on android too ([c1d34ab](https://github.com/Cap-go/native-audio/commit/c1d34ab249a21bb8119fc295ff5884bc2016dfde))
+- addlistener currentTime ([836d157](https://github.com/Cap-go/native-audio/commit/836d1577ec5a87f45d50220bbb2f354cd6f21d82))
+
+### Bug Fixes
+
+- android build issue ([d50928c](https://github.com/Cap-go/native-audio/commit/d50928ccd1ef3892af49502072ec088604312eaf))
+- lint ([755bab5](https://github.com/Cap-go/native-audio/commit/755bab50b7561d4dd104d1539a64ba77b0f8fe73))
+- m3u8 methods ([f8f0d70](https://github.com/Cap-go/native-audio/commit/f8f0d705789476482fce776554421f4d0734ff5e))
+
+### [7.2.1](https://github.com/Cap-go/native-audio/compare/7.2.0...7.2.1) (2025-02-18)
+
+### Bug Fixes
+
+- IOS issue with concurency + make m3u8 work perfect with cache ([a38e496](https://github.com/Cap-go/native-audio/commit/a38e49659795735346b583bfeb452dc0131747a8))
+
+## [7.2.0](https://github.com/Cap-go/native-audio/compare/7.1.11...7.2.0) (2025-02-17)
+
+### Features
+
+- add m3u8 support ([61226d5](https://github.com/Cap-go/native-audio/commit/61226d5c0fb2b203fe68a9b316cff1f5bf7a60b9))
+
+### [7.1.11](https://github.com/Cap-go/native-audio/compare/7.1.10...7.1.11) (2025-02-17)
+
+### Bug Fixes
+
+- add m3u8 support ([f31db05](https://github.com/Cap-go/native-audio/commit/f31db0520f571e7eb5174dc4968693c47ef48131))
+
+### [7.1.10](https://github.com/Cap-go/native-audio/compare/7.1.9...7.1.10) (2025-02-17)
+
+### Bug Fixes
+
+- loop remote assets + cache them + clean cache + fmt ([3a0129e](https://github.com/Cap-go/native-audio/commit/3a0129eade2ce09885d5f1f4caa14e556f3bbc72))
+
+### [7.1.9](https://github.com/Cap-go/native-audio/compare/7.1.8...7.1.9) (2025-02-17)
+
+### Bug Fixes
+
+- get duration remote Assets ([6d8a002](https://github.com/Cap-go/native-audio/commit/6d8a0029fd3dc5c61cb6430a8967ff949872614c))
+
+### [7.1.8](https://github.com/Cap-go/native-audio/compare/7.1.7...7.1.8) (2025-02-09)
+
+### Bug Fixes
+
+- missing class ([d5654c6](https://github.com/Cap-go/native-audio/commit/d5654c6fb9d34e113acf35bb6a476a3febdcd280))
+
+### [7.1.7](https://github.com/Cap-go/native-audio/compare/7.1.6...7.1.7) (2025-02-08)
+
+### Bug Fixes
+
+- author ([b31f81c](https://github.com/Cap-go/native-audio/commit/b31f81cf8a95b003e8e7e2f13fee690f2f5f0679))
+
+### [7.1.6](https://github.com/Cap-go/native-audio/compare/7.1.5...7.1.6) (2025-02-08)
+
+### Bug Fixes
+
+- lint ([b33145a](https://github.com/Cap-go/native-audio/commit/b33145a012cfea74be68f0df0e28a3dd62d61e96))
+
+### [7.1.5](https://github.com/Cap-go/native-audio/compare/7.1.4...7.1.5) (2025-02-08)
+
+### Bug Fixes
+
+- templates ([d9ec853](https://github.com/Cap-go/native-audio/commit/d9ec8537d984f1e43957d24b6509144403aa39e7))
+
+### [7.1.4](https://github.com/Cap-go/native-audio/compare/7.1.3...7.1.4) (2025-02-08)
+
+### Bug Fixes
+
+- remove old lock ([056b952](https://github.com/Cap-go/native-audio/commit/056b95289771a8873dfe2cf8c39f33d6579ba9f6))
+
+### [7.1.3](https://github.com/Cap-go/native-audio/compare/7.1.2...7.1.3) (2025-02-08)
+
+### Bug Fixes
+
+- switch to new plugin definition ([4751be0](https://github.com/Cap-go/native-audio/commit/4751be013fc006affe54d8a3e1f79085b023c954))
+
+### [7.1.2](https://github.com/Cap-go/native-audio/compare/7.1.1...7.1.2) (2025-02-08)
+
+### Bug Fixes
+
+- version eslint ([a02cc89](https://github.com/Cap-go/native-audio/commit/a02cc895839a31041d399d07c2e90dcd4847bfcc))
+
+### [7.1.1](https://github.com/Cap-go/native-audio/compare/7.1.0...7.1.1) (2025-02-08)
+
+### Bug Fixes
+
+- lint ([b414907](https://github.com/Cap-go/native-audio/commit/b414907826d20154cf1ac5cf301234f81af93108))
+
+## [7.1.0](https://github.com/Cap-go/native-audio/compare/6.5.0...7.1.0) (2025-02-08)
+
+### Features
+
+- migrate to capacitor v7 ([9ad5d58](https://github.com/Cap-go/native-audio/commit/9ad5d5894d20e03e47349bb6596a128831a214ce))
+
+### Bug Fixes
+
+- CI/CD ([9db35cb](https://github.com/Cap-go/native-audio/commit/9db35cb53c6bd415ab7f128a8969d167c36fde6b))
+
+## [6.5.0](https://github.com/Cap-go/native-audio/compare/6.4.23...6.5.0) (2025-02-08)
+
+### Features
+
+- **setCurrentTime:** Added a setCurrentTime function (not tested) ([e52b44d](https://github.com/Cap-go/native-audio/commit/e52b44de834323596c0c8d23f77258b61c619a80))
+
+### [6.4.23](https://github.com/Cap-go/native-audio/compare/6.4.22...6.4.23) (2024-10-29)
+
+### Bug Fixes
+
+- licence ([0018967](https://github.com/Cap-go/native-audio/commit/00189675de4619633a7f74765a2b3c261345802c))
+
+### [6.4.22](https://github.com/Cap-go/native-audio/compare/6.4.21...6.4.22) (2024-10-29)
+
+### Bug Fixes
+
+- Ensure "complete" event is dispatched on Android after playing a remote audio asset ([2363425](https://github.com/Cap-go/native-audio/commit/23634259bf590d693eaa4027bbe8a185ef97b2b5))
+
+### [6.4.21](https://github.com/Cap-go/native-audio/compare/6.4.20...6.4.21) (2024-09-23)
+
+### Bug Fixes
+
+- remote playback ([bce1bad](https://github.com/Cap-go/native-audio/commit/bce1bad8ef29f732f6a379afbe6fffe19ea2498d))
+
+### [6.4.20](https://github.com/Cap-go/native-audio/compare/6.4.19...6.4.20) (2024-09-20)
+
+### Bug Fixes
+
+- lint issue ([5f52058](https://github.com/Cap-go/native-audio/commit/5f52058c5c837f752c22d6d8292f9f8b306546f8))
+
+### [6.4.19](https://github.com/Cap-go/native-audio/compare/6.4.18...6.4.19) (2024-09-19)
+
+### Bug Fixes
+
+- compete event on web ([eb2ee7b](https://github.com/Cap-go/native-audio/commit/eb2ee7b0e4eee4affb192845271aee0de8e645c6))
+
+### [6.4.18](https://github.com/Cap-go/native-audio/compare/6.4.17...6.4.18) (2024-09-14)
+
+### Bug Fixes
+
+- definition of isPreload ([2f0df01](https://github.com/Cap-go/native-audio/commit/2f0df0104242f48f413e06703e87627b2947cf7d))
+
+### [6.4.17](https://github.com/Cap-go/native-audio/compare/6.4.16...6.4.17) (2024-09-07)
+
+### Bug Fixes
+
+- lint and make code use better norm ([9987d4a](https://github.com/Cap-go/native-audio/commit/9987d4af6337c51ece61425bb4a8cd6cda8b4ce7))
+
+### [6.4.16](https://github.com/Cap-go/native-audio/compare/6.4.15...6.4.16) (2024-09-07)
+
+### Bug Fixes
+
+- play add reject ([2bbdead](https://github.com/Cap-go/native-audio/commit/2bbdead62452a62888aa565a5bf4b0daa62e99a3))
+
+### [6.4.15](https://github.com/Cap-go/native-audio/compare/6.4.14...6.4.15) (2024-09-07)
+
+### Bug Fixes
+
+- add missing resolve ([c90d64c](https://github.com/Cap-go/native-audio/commit/c90d64c5bf82ca80b35f81370062c65359c1cf41))
+
+### [6.4.14](https://github.com/Cap-go/native-audio/compare/6.4.13...6.4.14) (2024-09-07)
+
+### Bug Fixes
+
+- missing one resolve ([ba4e30c](https://github.com/Cap-go/native-audio/commit/ba4e30ce4d48b5fa0a932387845578635d42a52f))
+
+### [6.4.13](https://github.com/Cap-go/native-audio/compare/6.4.12...6.4.13) (2024-09-05)
+
+### [6.4.12](https://github.com/Cap-go/native-audio/compare/6.4.11...6.4.12) (2024-09-05)
+
+### [6.4.11](https://github.com/Cap-go/native-audio/compare/6.4.10...6.4.11) (2024-08-27)
+
+### Bug Fixes
+
+- listener issue ([6e09efa](https://github.com/Cap-go/native-audio/commit/6e09efab308be6ad31264e5ca4dce0f2c9309b02))
+
+### [6.4.10](https://github.com/Cap-go/native-audio/compare/6.4.9...6.4.10) (2024-08-27)
+
+### Bug Fixes
+
+- make unload return same in every platform ([0ec0d76](https://github.com/Cap-go/native-audio/commit/0ec0d769e9b72d02f498972a9e14dbc452db8af4))
+
+### [6.4.9](https://github.com/Cap-go/native-audio/compare/6.4.8...6.4.9) (2024-08-27)
+
+### Bug Fixes
+
+- remove bad call ([2c012f8](https://github.com/Cap-go/native-audio/commit/2c012f859dd89a5509997ae4eaacef0d0a2961ba))
+
+### [6.4.8](https://github.com/Cap-go/native-audio/compare/6.4.7...6.4.8) (2024-08-27)
+
+### Bug Fixes
+
+- build issue ([3c1a3fa](https://github.com/Cap-go/native-audio/commit/3c1a3fa32f31f4e7c1acbba430d805bcdd14334c))
+
+### [6.4.7](https://github.com/Cap-go/native-audio/compare/6.4.6...6.4.7) (2024-08-27)
+
+### [6.4.6](https://github.com/Cap-go/native-audio/compare/6.4.5...6.4.6) (2024-08-27)
+
+### Bug Fixes
+
+- android playback ([e541e47](https://github.com/Cap-go/native-audio/commit/e541e47f58264d467013995ab682215cb44d44b6))
+
+### [6.4.5](https://github.com/Cap-go/native-audio/compare/6.4.4...6.4.5) (2024-08-27)
+
+### Bug Fixes
+
+- ios local file path ([7d1a226](https://github.com/Cap-go/native-audio/commit/7d1a2261a6768f65c742a272f0d749961eadca8b))
+
+### [6.4.4](https://github.com/Cap-go/native-audio/compare/6.4.3...6.4.4) (2024-06-07)
+
+### Bug Fixes
+
+- add missing event listener ([4d1e720](https://github.com/Cap-go/native-audio/commit/4d1e72096e7506bd1370bd2ca055a9bfe81423c8))
+
+### [6.4.3](https://github.com/Cap-go/native-audio/compare/6.4.2...6.4.3) (2024-06-03)
+
+### Bug Fixes
+
+- better ref ([0d5384a](https://github.com/Cap-go/native-audio/commit/0d5384ad80ee8f5b32bb74e9905f2957c4ff99b3))
+
+### [6.4.2](https://github.com/Cap-go/native-audio/compare/6.4.1...6.4.2) (2024-06-03)
+
+### Bug Fixes
+
+- add better header for consulting and capgo ([7d93625](https://github.com/Cap-go/native-audio/commit/7d93625f266cf56e4ea450268ee370f55409a504))
+
+### [6.4.1](https://github.com/Cap-go/native-audio/compare/6.4.0...6.4.1) (2024-06-03)
+
+### Bug Fixes
+
+- lint issue ([5c8a71e](https://github.com/Cap-go/native-audio/commit/5c8a71e4452933bbd26769cfa427588729f6dcf2))
+
+## [6.4.0](https://github.com/Cap-go/native-audio/compare/6.3.4...6.4.0) (2024-06-03)
+
+### Features
+
+- add isPreload + lint issue ([cb63909](https://github.com/Cap-go/native-audio/commit/cb63909c12703675a7f198ff421e01c2511a4406))
+- add isPreload + lint issue ([ac6c167](https://github.com/Cap-go/native-audio/commit/ac6c167b6eef3cc235d68e06a786d40c18497917))
+
+### [6.3.4](https://github.com/Cap-go/native-audio/compare/6.3.3...6.3.4) (2024-05-19)
+
+### [6.3.3](https://github.com/Cap-go/native-audio/compare/6.3.2...6.3.3) (2024-05-19)
+
+### [6.3.2](https://github.com/Cap-go/native-audio/compare/6.3.1...6.3.2) (2024-04-30)
+
+### Bug Fixes
+
+- lint ([26712d3](https://github.com/Cap-go/native-audio/commit/26712d35823fcd98c4bd516bbd16d93b7482dc7a))
+
+### [6.3.1](https://github.com/Cap-go/native-audio/compare/6.3.0...6.3.1) (2024-04-30)
+
+### Bug Fixes
+
+- pnpm ([a445502](https://github.com/Cap-go/native-audio/commit/a445502ad62066b10a80b52d61d5ed1c18a94b2a))
+
+## [6.3.0](https://github.com/Cap-go/native-audio/compare/6.2.7...6.3.0) (2024-04-30)
+
+### Features
+
+- capacitor 6 ([362cdd1](https://github.com/Cap-go/native-audio/commit/362cdd15288007af8c28245f28f14eda58126b65))
+
+### [6.2.7](https://github.com/Cap-go/native-audio/compare/6.2.6...6.2.7) (2024-02-19)
+
+### [6.2.6](https://github.com/Cap-go/native-audio/compare/6.2.5...6.2.6) (2024-02-19)
+
+### [6.2.5](https://github.com/Cap-go/native-audio/compare/6.2.4...6.2.5) (2024-02-12)
+
+### Bug Fixes
+
+- **deps:** update dependency com.android.tools.build:gradle to v8.2.2 ([6013513](https://github.com/Cap-go/native-audio/commit/60135134d72dec1f1c29c133ee6b2213fb2439fa))
+
+### [6.2.4](https://github.com/Cap-go/native-audio/compare/6.2.3...6.2.4) (2024-02-12)
+
+### [6.2.3](https://github.com/Cap-go/native-audio/compare/6.2.2...6.2.3) (2024-02-05)
+
+### [6.2.2](https://github.com/Cap-go/native-audio/compare/6.2.1...6.2.2) (2024-01-22)
+
+### [6.2.1](https://github.com/Cap-go/native-audio/compare/6.2.0...6.2.1) (2024-01-18)
+
+### Bug Fixes
+
+- session focus issue ([b2e002c](https://github.com/Cap-go/native-audio/commit/b2e002cb7de878311453e90ddc645f77529a338f))
+
+## [6.2.0](https://github.com/Cap-go/native-audio/compare/6.1.36...6.2.0) (2024-01-17)
+
+### Features
+
+- allow remote load files ([3538c25](https://github.com/Cap-go/native-audio/commit/3538c25742184a4b4a5b19eb3928dfef12c707bf))
+
+### [6.1.36](https://github.com/Cap-go/native-audio/compare/6.1.35...6.1.36) (2024-01-17)
+
+### Bug Fixes
+
+- IOS not mixing as it should ([c801607](https://github.com/Cap-go/native-audio/commit/c801607241183a14d5bcb52d32819393aabd3024))
+
+### [6.1.35](https://github.com/Cap-go/native-audio/compare/6.1.34...6.1.35) (2024-01-17)
+
+### Bug Fixes
+
+- issue with eating audio ([1ac9eff](https://github.com/Cap-go/native-audio/commit/1ac9eff20c7d95f44a76741d64fd6a236380c1e4))
+
+### [6.1.34](https://github.com/Cap-go/native-audio/compare/6.1.33...6.1.34) (2024-01-15)
+
+### [6.1.33](https://github.com/Cap-go/native-audio/compare/6.1.32...6.1.33) (2024-01-08)
+
+### Bug Fixes
+
+- **deps:** update dependency com.android.tools.build:gradle to v8.2.1 ([9036d77](https://github.com/Cap-go/native-audio/commit/9036d7751207a1e121ee36cba03e5d0c2a44a6e1))
+
+### [6.1.32](https://github.com/Cap-go/native-audio/compare/6.1.31...6.1.32) (2024-01-08)
+
+### [6.1.31](https://github.com/Cap-go/native-audio/compare/6.1.30...6.1.31) (2024-01-01)
+
+### [6.1.30](https://github.com/Cap-go/native-audio/compare/6.1.29...6.1.30) (2023-12-25)
+
+### Bug Fixes
+
+- **deps:** update dependency com.android.tools.build:gradle to v8.2.0 ([0604382](https://github.com/Cap-go/native-audio/commit/0604382d4729dc944ef88922f31a6c3df0e74994))
+
+### [6.1.29](https://github.com/Cap-go/native-audio/compare/6.1.28...6.1.29) (2023-12-25)
+
+### [6.1.28](https://github.com/Cap-go/native-audio/compare/6.1.27...6.1.28) (2023-12-25)
+
+### [6.1.27](https://github.com/Cap-go/native-audio/compare/6.1.26...6.1.27) (2023-12-25)
+
+### [6.1.26](https://github.com/Cap-go/native-audio/compare/6.1.25...6.1.26) (2023-12-18)
+
+### [6.1.25](https://github.com/Cap-go/native-audio/compare/6.1.24...6.1.25) (2023-12-18)
+
+### [6.1.24](https://github.com/Cap-go/native-audio/compare/6.1.23...6.1.24) (2023-12-11)
+
+### [6.1.23](https://github.com/Cap-go/native-audio/compare/6.1.22...6.1.23) (2023-12-11)
+
+### [6.1.22](https://github.com/Cap-go/native-audio/compare/6.1.21...6.1.22) (2023-12-04)
+
+### [6.1.21](https://github.com/Cap-go/native-audio/compare/6.1.20...6.1.21) (2023-12-04)
+
+### [6.1.20](https://github.com/Cap-go/native-audio/compare/6.1.19...6.1.20) (2023-12-04)
+
+### [6.1.19](https://github.com/Cap-go/native-audio/compare/6.1.18...6.1.19) (2023-12-04)
+
+### [6.1.18](https://github.com/Cap-go/native-audio/compare/6.1.17...6.1.18) (2023-11-27)
+
+### [6.1.17](https://github.com/Cap-go/native-audio/compare/6.1.16...6.1.17) (2023-11-27)
+
+### [6.1.16](https://github.com/Cap-go/native-audio/compare/6.1.15...6.1.16) (2023-11-20)
+
+### Bug Fixes
+
+- **deps:** update dependency com.android.tools.build:gradle to v8.1.4 ([f64a9c4](https://github.com/Cap-go/native-audio/commit/f64a9c41f5bb4caff29241cbb44bc01c8bf026d6))
+
+### [6.1.15](https://github.com/Cap-go/native-audio/compare/6.1.14...6.1.15) (2023-11-20)
+
+### [6.1.14](https://github.com/Cap-go/native-audio/compare/6.1.13...6.1.14) (2023-11-13)
+
+### [6.1.13](https://github.com/Cap-go/native-audio/compare/6.1.12...6.1.13) (2023-11-13)
+
+### Bug Fixes
+
+- **deps:** update dependency com.android.tools.build:gradle to v8.1.3 ([e158f0e](https://github.com/Cap-go/native-audio/commit/e158f0ec230871b6e36cdaf35c599b28bddd9c26))
+
+### [6.1.12](https://github.com/Cap-go/native-audio/compare/6.1.11...6.1.12) (2023-11-06)
+
+### [6.1.11](https://github.com/Cap-go/native-audio/compare/6.1.10...6.1.11) (2023-11-06)
+
+### [6.1.10](https://github.com/Cap-go/native-audio/compare/6.1.9...6.1.10) (2023-11-06)
+
+### [6.1.9](https://github.com/Cap-go/native-audio/compare/6.1.8...6.1.9) (2023-11-06)
+
+### [6.1.8](https://github.com/Cap-go/native-audio/compare/6.1.7...6.1.8) (2023-10-30)
+
+### [6.1.7](https://github.com/Cap-go/native-audio/compare/6.1.6...6.1.7) (2023-10-30)
+
+### [6.1.6](https://github.com/Cap-go/native-audio/compare/6.1.5...6.1.6) (2023-10-30)
+
+### [6.1.5](https://github.com/Cap-go/native-audio/compare/6.1.4...6.1.5) (2023-10-30)
+
+### [6.1.4](https://github.com/Cap-go/native-audio/compare/6.1.3...6.1.4) (2023-10-23)
+
+### [6.1.3](https://github.com/Cap-go/native-audio/compare/6.1.2...6.1.3) (2023-10-23)
+
+### [6.1.2](https://github.com/Cap-go/native-audio/compare/6.1.1...6.1.2) (2023-10-23)
+
+### [6.1.1](https://github.com/Cap-go/native-audio/compare/6.1.0...6.1.1) (2023-10-23)
+
+## [6.1.0](https://github.com/Cap-go/native-audio/compare/6.0.21...6.1.0) (2023-10-18)
+
+### Features
+
+- ios background and delay ([d1b1866](https://github.com/Cap-go/native-audio/commit/d1b18668b3322a6cb361d5ab57c33a561137d803))
+- ios background and ignoreSilent config ([b5307b9](https://github.com/Cap-go/native-audio/commit/b5307b94175a44757fcb68f5be435cb240602c7b))
+- ios play delay ([b8c2599](https://github.com/Cap-go/native-audio/commit/b8c2599f0ad345d549ffe75305e6639309958879))
+
+### Bug Fixes
+
+- code cleanup ([d7f6f9e](https://github.com/Cap-go/native-audio/commit/d7f6f9e8e10d9b668d600a0820d78b9515e96936))
+- missing constants ([060cfa5](https://github.com/Cap-go/native-audio/commit/060cfa547f1b87756408d1e7bafefee308a3cddf))
+- npm run fmt - swiftlint cleanup ([af92cdf](https://github.com/Cap-go/native-audio/commit/af92cdfc587293e835fcc287cf376d1c8aa4012a))
+
+### [6.0.21](https://github.com/Cap-go/native-audio/compare/6.0.20...6.0.21) (2023-10-09)
+
+### [6.0.20](https://github.com/Cap-go/native-audio/compare/6.0.19...6.0.20) (2023-10-02)
+
+### Bug Fixes
+
+- **deps:** update dependency com.android.tools.build:gradle to v8.1.2 ([8250ede](https://github.com/Cap-go/native-audio/commit/8250edeef2c16128b9256c92541ba1c419165c73))
+
+### [6.0.19](https://github.com/Cap-go/native-audio/compare/6.0.18...6.0.19) (2023-08-28)
+
+### Bug Fixes
+
+- **deps:** update dependency com.android.tools.build:gradle to v8.1.1 ([8c41742](https://github.com/Cap-go/native-audio/commit/8c41742d37f6a34372210e1d33d755946a6eb505))
+
+### [6.0.18](https://github.com/Cap-go/native-audio/compare/6.0.17...6.0.18) (2023-08-21)
+
+### [6.0.17](https://github.com/Cap-go/native-audio/compare/6.0.16...6.0.17) (2023-08-10)
+
+### [6.0.16](https://github.com/Cap-go/native-audio/compare/6.0.15...6.0.16) (2023-08-10)
+
+### Bug Fixes
+
+- build ([68e41bb](https://github.com/Cap-go/native-audio/commit/68e41bb3fe9d9326bbc86598131082439cc8642b))
+- ci/CD no husky ([5e2ec99](https://github.com/Cap-go/native-audio/commit/5e2ec999ee12aaa9514788ae811c9fdb06440568))
+- try with husky but disabling it in CI ([2888073](https://github.com/Cap-go/native-audio/commit/2888073beca5869555df5686c34b851d208fb835))
+
+### [6.0.15](https://github.com/Cap-go/native-audio/compare/6.0.14...6.0.15) (2023-08-10)
+
+### Bug Fixes
+
+- build script ([0effa42](https://github.com/Cap-go/native-audio/commit/0effa42a9df522cdd82b40873b160c118239962b))
+- CI/CD ([3609c20](https://github.com/Cap-go/native-audio/commit/3609c20c5b36b69c8e8f9ba7447048ee2d2e8f85))
+- issue build CI/CD ([78168e9](https://github.com/Cap-go/native-audio/commit/78168e98ec67d65d94114f006fc1c79665ed07fa))
+- remove husky install for CI/CD ([6093dd5](https://github.com/Cap-go/native-audio/commit/6093dd515c7889e3205abc8bd574d1f7f222a819))
+
+### [6.0.14](https://github.com/Cap-go/native-audio/compare/6.0.13...6.0.14) (2023-08-10)
+
+### Bug Fixes
+
+- **deps:** update dependency com.android.tools.build:gradle to v8.1.0 ([a336e9c](https://github.com/Cap-go/native-audio/commit/a336e9c3c59efed21a78bff4a05d7632c1b5e5d0))
+
+### [6.0.13](https://github.com/Cap-go/native-audio/compare/6.0.12...6.0.13) (2023-07-03)
+
+### [6.0.12](https://github.com/Cap-go/native-audio/compare/6.0.11...6.0.12) (2023-06-14)
+
+### [6.0.11](https://github.com/Cap-go/native-audio/compare/6.0.10...6.0.11) (2023-06-13)
+
 ### [6.0.10](https://github.com/Cap-go/native-audio/compare/v6.0.4...v6.0.10) (2023-06-01)
 
 ### Bug Fixes

@@ -1,8 +1,9 @@
 {
   "name": "@capgo/native-audio",
-  "version": "6.0.11",
+  "version": "7.3.28",
   "description": "A native plugin for native audio engine",
-  "main": "dist/plugin.js",
+  "license": "MIT",
+  "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "unpkg": "dist/plugin.js",
@@ -13,11 +14,20 @@
     "ios/Plugin/",
     "CapgoNativeAudio.podspec"
   ],
+  "author": "Martin Donadieu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cap-go/capacitor-native-audio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cap-go/capacitor-native-audio/native-audio/issues"
+  },
   "keywords": [
     "capacitor",
     "plugin",
     "audio",
     "media",
+    "capgo",
     "native"
   ],
   "scripts": {
@@ -25,44 +35,46 @@
     "verify:ios": "cd ios && pod install && xcodebuild -workspace Plugin.xcworkspace -scheme Plugin && cd ..",
     "verify:android": "cd android && ./gradlew clean build test && cd ..",
     "verify:web": "npm run build",
+    "test": "npm run test:ios",
+    "test:ios": "cd ios && xcodebuild test -workspace Plugin.xcworkspace -scheme Plugin -destination 'platform=iOS Simulator,name=iPhone 16' && cd ..",
     "lint": "npm run eslint && npm run prettier -- --check && npm run swiftlint -- lint",
     "fmt": "npm run eslint -- --fix && npm run prettier -- --write && npm run swiftlint -- --autocorrect --format",
-    "eslint": "eslint . --ext ts",
-    "prettier": "prettier --config .prettierrc.js \"**/*.{css,html,ts,js,java}\"",
+    "eslint": "eslint . --ext .ts",
+    "prettier": "prettier \"**/*.{css,html,ts,js,java}\" --plugin=prettier-plugin-java",
     "swiftlint": "node-swiftlint",
     "docgen": "docgen --api NativeAudio --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.mjs",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
-    "prepublishOnly": "npm run build",
-    "prepare": "husky install"
+    "prepublishOnly": "npm run build"
   },
-  "author": "Martin Donadieu <martindonadieu@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
-    "@capacitor/android": "^5.0.3",
-    "@capacitor/cli": "^5.0.3",
-    "@capacitor/core": "^5.0.3",
-    "@capacitor/docgen": "^0.2.1",
-    "@capacitor/ios": "^5.0.3",
-    "@ionic/eslint-config": "^0.3.0",
-    "@ionic/prettier-config": "^3.0.0",
-    "@ionic/swiftlint-config": "^1.1.2",
-    "@types/node": "^20.2.3",
-    "@typescript-eslint/eslint-plugin": "^5.59.7",
-    "@typescript-eslint/parser": "^5.59.7",
-    "eslint": "^8.41.0",
-    "eslint-plugin-import": "^2.27.5",
-    "husky": "^8.0.3",
-    "prettier": "^2.8.8",
-    "prettier-plugin-java": "^2.1.0",
-    "rimraf": "^5.0.1",
-    "rollup": "^3.23.0",
-    "swiftlint": "^1.0.2",
-    "typescript": "^5.0.4"
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/docgen": "^0.3.0",
+    "@capacitor/ios": "^7.0.0",
+    "@ionic/eslint-config": "^0.4.0",
+    "@ionic/prettier-config": "^4.0.0",
+    "@ionic/swiftlint-config": "^2.0.0",
+    "@types/node": "^22.13.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.31.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2",
+    "prettier-plugin-java": "^2.6.7",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.34.6",
+    "swiftlint": "^2.0.0",
+    "typescript": "^5.7.3"
   },
   "peerDependencies": {
-    "@capacitor/core": "^5.0.0"
+    "@capacitor/core": ">=7.0.0"
+  },
+  "prettier": "@ionic/prettier-config",
+  "swiftlint": "@ionic/swiftlint-config",
+  "eslintConfig": {
+    "extends": "@ionic/eslint-config/recommended"
   },
   "capacitor": {
     "ios": {
@@ -71,20 +83,5 @@
     "android": {
       "src": "android"
     }
-  },
-  "prettier": "@ionic/prettier-config",
-  "swiftlint": "@ionic/swiftlint-config",
-  "eslintConfig": {
-    "extends": "@ionic/eslint-config/recommended"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Cap-go/native-audio"
-  },
-  "bugs": {
-    "url": "https://github.com/Cap-go/native-audio/issues"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

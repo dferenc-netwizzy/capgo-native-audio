@@ -25,6 +25,15 @@ export class NativeAudioWeb extends WebPlugin implements NativeAudio {
     return audio.pause();
   }
 
+  async setCurrentTime(options: {
+    assetId: string;
+    time: number;
+  }): Promise<void> {
+    const audio: HTMLAudioElement = this.getAudioAsset(options.assetId).audio;
+    audio.currentTime = options.time;
+    return;
+  }
+
   async getCurrentTime(options: {
     assetId: string;
   }): Promise<{ currentTime: number }> {
@@ -47,6 +56,14 @@ export class NativeAudioWeb extends WebPlugin implements NativeAudio {
 
   async configure(options: ConfigureOptions): Promise<void> {
     throw `configure is not supported for web: ${JSON.stringify(options)}`;
+  }
+
+  async isPreloaded(options: PreloadOptions): Promise<{ found: boolean }> {
+    try {
+      return { found: !!this.getAudioAsset(options.assetId) };
+    } catch (e) {
+      return { found: false };
+    }
   }
 
   async preload(options: PreloadOptions): Promise<void> {
@@ -72,20 +89,31 @@ export class NativeAudioWeb extends WebPlugin implements NativeAudio {
     }
     NativeAudioWeb.AUDIO_ASSET_BY_ASSET_ID.set(
       options.assetId,
-      new AudioAsset(audio)
+      new AudioAsset(audio),
     );
   }
+  private onEnded(assetId: string): void {
+    this.notifyListeners("complete", { assetId });
+  }
 
-  async play(options: { assetId: string; time?: number, volume?: number }): Promise<void> {
-    const audio: HTMLAudioElement = this.getAudioAsset(options.assetId).audio;
+  async play(options: {
+    assetId: string;
+    time?: number;
+    volume?: number;
+  }): Promise<void> {
+    const { assetId, time = 0, volume = 1 } = options;
+    const audio = this.getAudioAsset(assetId).audio;
     await this.stop(options);
-    audio.volume = options.volume ?? 1;
+    audio.volume = volume;
     audio.loop = false;
-    audio.currentTime = options.time ?? 0;
+    audio.currentTime = time;
+    audio.addEventListener("ended", () => this.onEnded(assetId), {
+      once: true,
+    });
     return audio.play();
   }
 
-  async loop(options: { assetId: string, volume?: number }): Promise<void> {
+  async loop(options: { assetId: string; volume?: number }): Promise<void> {
     const audio: HTMLAudioElement = this.getAudioAsset(options.assetId).audio;
     await this.stop(options);
     audio.volume = options.volume ?? 1;
@@ -128,6 +156,11 @@ export class NativeAudioWeb extends WebPlugin implements NativeAudio {
   }): Promise<{ isPlaying: boolean }> {
     const audio: HTMLAudioElement = this.getAudioAsset(options.assetId).audio;
     return { isPlaying: !audio.paused };
+  }
+
+  async clearCache(): Promise<void> {
+    // Web audio doesn't have a persistent cache to clear
+    return;
   }
 
   private getAudioAsset(assetId: string): AudioAsset {

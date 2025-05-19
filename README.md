@@ -1,17 +1,22 @@
+# Native audio
+
 <a href="https://capgo.app/"><img src='https://raw.githubusercontent.com/Cap-go/capgo/main/assets/capgo_banner.png' alt='Capgo - Instant updates for capacitor'/></a>
 
 <div align="center">
-<h2><a href="https://capgo.app/">Check out: Capgo — Instant updates for capacitor</a></h2>
+  <h2><a href="https://capgo.app/?ref=plugin"> ➡️ Get Instant updates for your App with Capgo 🚀</a></h2>
+  <h2><a href="https://capgo.app/consulting/?ref=plugin"> Fix your annoying bug now, Hire a Capacitor expert 💪</a></h2>
 </div>
 
 <h3 align="center">Native Audio</h3>
-<p align="center"><strong><code>@capgo/native-audio</code></strong></p>
 <p align="center">
-  Capacitor plugin for playing sounds.
+  <strong>
+    <code>@capgo/native-audio</code>
+  </strong>
 </p>
+<p align="center">Capacitor plugin for playing sounds.</p>
 
 <p align="center">
-  <img src="https://img.shields.io/maintenance/yes/2022?style=flat-square" />
+  <img src="https://img.shields.io/maintenance/yes/2023?style=flat-square" />
   <a href="https://github.com/capgo/native-audio/actions?query=workflow%3A%22Test+and+Build+Plugin%22"><img src="https://img.shields.io/github/workflow/status/@capgo/native-audio/Test%20and%20Build%20Plugin?style=flat-square" /></a>
   <a href="https://www.npmjs.com/package/capgo/native-audio"><img src="https://img.shields.io/npm/l/@capgo/native-audio?style=flat-square" /></a>
 <br>
@@ -25,7 +30,9 @@
 # Capacitor Native Audio Plugin
 
 Capacitor plugin for native audio engine.
-Capacitor v4 - ✅ Support!
+Capacitor V7 - ✅ Support!
+
+Support local file, remote URL, and m3u8 stream
 
 Click on video to see example 💥
 
@@ -104,7 +111,7 @@ import {NativeAudio} from '@capgo/native-audio'
 
 /**
  * This method will load more optimized audio files for background into memory.
- * @param assetPath - relative path of the file or absolute url (file://)
+ * @param assetPath - relative path of the file, absolute url (file://) or remote url (https://)
  *        assetId - unique identifier of the file
  *        audioChannelNum - number of audio channels
  *        isUrl - pass true if assetPath is a `file://` url
@@ -163,7 +170,7 @@ NativeAudio.unload({
 /**
  * This method will set the new volume for a audio file.
  * @param assetId - identifier of the asset
- *        volume - numerical value of the volume between 0.1 - 1.0
+ *        volume - numerical value of the volume between 0.1 - 1.0 default 1.0
  * @returns void
  */
 NativeAudio.setVolume({
@@ -219,9 +226,13 @@ NativeAudio.isPlaying({
 configure(options: ConfigureOptions) => Promise<void>
 ```
 
+Configure the audio player
+
 | Param         | Type                                                          |
 | ------------- | ------------------------------------------------------------- |
 | **`options`** | <code><a href="#configureoptions">ConfigureOptions</a></code> |
+
+**Since:** 5.0.0
 
 ---
 
@@ -231,81 +242,127 @@ configure(options: ConfigureOptions) => Promise<void>
 preload(options: PreloadOptions) => Promise<void>
 ```
 
+Load an audio file
+
 | Param         | Type                                                      |
 | ------------- | --------------------------------------------------------- |
 | **`options`** | <code><a href="#preloadoptions">PreloadOptions</a></code> |
+
+**Since:** 5.0.0
+
+---
+
+### isPreloaded(...)
+
+```typescript
+isPreloaded(options: PreloadOptions) => Promise<{ found: boolean; }>
+```
+
+Check if an audio file is preloaded
+
+| Param         | Type                                                      |
+| ------------- | --------------------------------------------------------- |
+| **`options`** | <code><a href="#preloadoptions">PreloadOptions</a></code> |
+
+**Returns:** <code>Promise&lt;{ found: boolean; }&gt;</code>
+
+**Since:** 6.1.0
 
 ---
 
 ### play(...)
 
 ```typescript
-play(options: { assetId: string; time?: number; volume?: number; }) => Promise<void>
+play(options: { assetId: string; time?: number; delay?: number; volume?: number; }) => Promise<void>
 ```
 
-| Param         | Type                                                              |
-| ------------- | ----------------------------------------------------------------- |
-| **`options`** | <code>{ assetId: string; time?: number; volume?: number; }</code> |
+Play an audio file
+
+| Param         | Type                                                                              |
+| ------------- | --------------------------------------------------------------------------------- |
+| **`options`** | <code>{ assetId: string; time?: number; delay?: number; volume?: number; }</code> |
+
+**Since:** 5.0.0
 
 ---
 
 ### pause(...)
 
 ```typescript
-pause(options: { assetId: string; }) => Promise<void>
+pause(options: Assets) => Promise<void>
 ```
 
-| Param         | Type                              |
-| ------------- | --------------------------------- |
-| **`options`** | <code>{ assetId: string; }</code> |
+Pause an audio file
+
+| Param         | Type                                      |
+| ------------- | ----------------------------------------- |
+| **`options`** | <code><a href="#assets">Assets</a></code> |
+
+**Since:** 5.0.0
 
 ---
 
 ### resume(...)
 
 ```typescript
-resume(options: { assetId: string; }) => Promise<void>
+resume(options: Assets) => Promise<void>
 ```
 
-| Param         | Type                              |
-| ------------- | --------------------------------- |
-| **`options`** | <code>{ assetId: string; }</code> |
+Resume an audio file
+
+| Param         | Type                                      |
+| ------------- | ----------------------------------------- |
+| **`options`** | <code><a href="#assets">Assets</a></code> |
+
+**Since:** 5.0.0
 
 ---
 
 ### loop(...)
 
 ```typescript
-loop(options: { assetId: string; volume?: number; }) => Promise<void>
+loop(options: Assets) => Promise<void>
 ```
 
-| Param         | Type                                               |
-| ------------- | -------------------------------------------------- |
-| **`options`** | <code>{ assetId: string; volume?: number; }</code> |
+Stop an audio file
+
+| Param         | Type                                      |
+| ------------- | ----------------------------------------- |
+| **`options`** | <code><a href="#assets">Assets</a></code> |
+
+**Since:** 5.0.0
 
 ---
 
 ### stop(...)
 
 ```typescript
-stop(options: { assetId: string; }) => Promise<void>
+stop(options: Assets) => Promise<void>
 ```
 
-| Param         | Type                              |
-| ------------- | --------------------------------- |
-| **`options`** | <code>{ assetId: string; }</code> |
+Stop an audio file
+
+| Param         | Type                                      |
+| ------------- | ----------------------------------------- |
+| **`options`** | <code><a href="#assets">Assets</a></code> |
+
+**Since:** 5.0.0
 
 ---
 
 ### unload(...)
 
 ```typescript
-unload(options: { assetId: string; }) => Promise<void>
+unload(options: Assets) => Promise<void>
 ```
 
-| Param         | Type                              |
-| ------------- | --------------------------------- |
-| **`options`** | <code>{ assetId: string; }</code> |
+Unload an audio file
+
+| Param         | Type                                      |
+| ------------- | ----------------------------------------- |
+| **`options`** | <code><a href="#assets">Assets</a></code> |
+
+**Since:** 5.0.0
 
 ---
 
@@ -315,9 +372,13 @@ unload(options: { assetId: string; }) => Promise<void>
 setVolume(options: { assetId: string; volume: number; }) => Promise<void>
 ```
 
+Set the volume of an audio file
+
 | Param         | Type                                              |
 | ------------- | ------------------------------------------------- |
 | **`options`** | <code>{ assetId: string; volume: number; }</code> |
+
+**Since:** 5.0.0
 
 ---
 
@@ -327,9 +388,29 @@ setVolume(options: { assetId: string; volume: number; }) => Promise<void>
 setRate(options: { assetId: string; rate: number; }) => Promise<void>
 ```
 
+Set the rate of an audio file
+
 | Param         | Type                                            |
 | ------------- | ----------------------------------------------- |
 | **`options`** | <code>{ assetId: string; rate: number; }</code> |
+
+**Since:** 5.0.0
+
+---
+
+### setCurrentTime(...)
+
+```typescript
+setCurrentTime(options: { assetId: string; time: number; }) => Promise<void>
+```
+
+Set the current time of an audio file
+
+| Param         | Type                                            |
+| ------------- | ----------------------------------------------- |
+| **`options`** | <code>{ assetId: string; time: number; }</code> |
+
+**Since:** 6.5.0
 
 ---
 
@@ -339,46 +420,58 @@ setRate(options: { assetId: string; rate: number; }) => Promise<void>
 getCurrentTime(options: { assetId: string; }) => Promise<{ currentTime: number; }>
 ```
 
+Get the current time of an audio file
+
 | Param         | Type                              |
 | ------------- | --------------------------------- |
 | **`options`** | <code>{ assetId: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ currentTime: number; }&gt;</code>
 
+**Since:** 5.0.0
+
 ---
 
 ### getDuration(...)
 
 ```typescript
-getDuration(options: { assetId: string; }) => Promise<{ duration: number; }>
+getDuration(options: Assets) => Promise<{ duration: number; }>
 ```
 
-| Param         | Type                              |
-| ------------- | --------------------------------- |
-| **`options`** | <code>{ assetId: string; }</code> |
+Get the duration of an audio file
+
+| Param         | Type                                      |
+| ------------- | ----------------------------------------- |
+| **`options`** | <code><a href="#assets">Assets</a></code> |
 
 **Returns:** <code>Promise&lt;{ duration: number; }&gt;</code>
+
+**Since:** 5.0.0
 
 ---
 
 ### isPlaying(...)
 
 ```typescript
-isPlaying(options: { assetId: string; }) => Promise<{ isPlaying: boolean; }>
+isPlaying(options: Assets) => Promise<{ isPlaying: boolean; }>
 ```
 
-| Param         | Type                              |
-| ------------- | --------------------------------- |
-| **`options`** | <code>{ assetId: string; }</code> |
+Check if an audio file is playing
+
+| Param         | Type                                      |
+| ------------- | ----------------------------------------- |
+| **`options`** | <code><a href="#assets">Assets</a></code> |
 
 **Returns:** <code>Promise&lt;{ isPlaying: boolean; }&gt;</code>
+
+**Since:** 5.0.0
 
 ---
 
 ### addListener('complete', ...)
 
 ```typescript
-addListener(eventName: "complete", listenerFunc: CompletedListener) => Promise<PluginListenerHandle> & PluginListenerHandle
+addListener(eventName: 'complete', listenerFunc: CompletedListener) => Promise<PluginListenerHandle>
 ```
 
 Listen for complete event
@@ -388,9 +481,43 @@ Listen for complete event
 | **`eventName`**    | <code>'complete'</code>                                         |
 | **`listenerFunc`** | <code><a href="#completedlistener">CompletedListener</a></code> |
 
-**Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt; & <a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
+**Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt;</code>
 
 **Since:** 5.0.0
+return {@link CompletedEvent}
+
+---
+
+### addListener('currentTime', ...)
+
+```typescript
+addListener(eventName: 'currentTime', listenerFunc: CurrentTimeListener) => Promise<PluginListenerHandle>
+```
+
+Listen for current time updates
+Emits every 100ms while audio is playing
+
+| Param              | Type                                                                |
+| ------------------ | ------------------------------------------------------------------- |
+| **`eventName`**    | <code>'currentTime'</code>                                          |
+| **`listenerFunc`** | <code><a href="#currenttimelistener">CurrentTimeListener</a></code> |
+
+**Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt;</code>
+
+**Since:** 6.5.0
+return {@link CurrentTimeEvent}
+
+---
+
+### clearCache()
+
+```typescript
+clearCache() => Promise<void>
+```
+
+Clear the audio cache for remote audio files
+
+**Since:** 6.5.0
 
 ---
 
@@ -398,20 +525,29 @@ Listen for complete event
 
 #### ConfigureOptions
 
-| Prop        | Type                 |
-| ----------- | -------------------- |
-| **`fade`**  | <code>boolean</code> |
-| **`focus`** | <code>boolean</code> |
+| Prop               | Type                 | Description                                                                   |
+| ------------------ | -------------------- | ----------------------------------------------------------------------------- |
+| **`fade`**         | <code>boolean</code> | Play the audio with Fade effect, only available for IOS                       |
+| **`focus`**        | <code>boolean</code> | focus the audio with Audio Focus                                              |
+| **`background`**   | <code>boolean</code> | Play the audio in the background                                              |
+| **`ignoreSilent`** | <code>boolean</code> | Ignore silent mode, works only on iOS setting this will nuke other audio apps |
 
 #### PreloadOptions
 
-| Prop                  | Type                 |
-| --------------------- | -------------------- |
-| **`assetPath`**       | <code>string</code>  |
-| **`assetId`**         | <code>string</code>  |
-| **`volume`**          | <code>number</code>  |
-| **`audioChannelNum`** | <code>number</code>  |
-| **`isUrl`**           | <code>boolean</code> |
+| Prop                  | Type                 | Description                                                                                                                                                                           |
+| --------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`assetPath`**       | <code>string</code>  | Path to the audio file, relative path of the file, absolute url (file://) or remote url (https://) Supported formats: - MP3, WAV (all platforms) - M3U8/HLS streams (iOS and Android) |
+| **`assetId`**         | <code>string</code>  | Asset Id, unique identifier of the file                                                                                                                                               |
+| **`volume`**          | <code>number</code>  | Volume of the audio, between 0.1 and 1.0                                                                                                                                              |
+| **`audioChannelNum`** | <code>number</code>  | Audio channel number, default is 1                                                                                                                                                    |
+| **`isUrl`**           | <code>boolean</code> | Is the audio file a URL, pass true if assetPath is a `file://` url or a streaming URL (m3u8)                                                                                          |
+
+#### Assets
+
+| Prop          | Type                | Description                             |
+| ------------- | ------------------- | --------------------------------------- |
+| **`assetId`** | <code>string</code> | Asset Id, unique identifier of the file |
+| **`volume`**  | <code>number</code> |                                         |
 
 #### PluginListenerHandle
 
@@ -425,10 +561,39 @@ Listen for complete event
 | ------------- | ------------------- | -------------------------- | ----- |
 | **`assetId`** | <code>string</code> | Emit when a play completes | 5.0.0 |
 
+#### CurrentTimeEvent
+
+| Prop              | Type                | Description                          | Since |
+| ----------------- | ------------------- | ------------------------------------ | ----- |
+| **`currentTime`** | <code>number</code> | Current time of the audio in seconds | 6.5.0 |
+| **`assetId`**     | <code>string</code> | Asset Id of the audio                | 6.5.0 |
+
 ### Type Aliases
 
 #### CompletedListener
 
 <code>(state: <a href="#completedevent">CompletedEvent</a>): void</code>
 
+#### CurrentTimeListener
+
+<code>(state: <a href="#currenttimeevent">CurrentTimeEvent</a>): void</code>
+
 </docgen-api>
+
+## Development and Testing
+
+### Building
+
+```bash
+npm run build
+```
+
+### Testing
+
+This plugin includes a comprehensive test suite for iOS:
+
+1. Open the iOS project in Xcode: `npx cap open ios`
+2. Navigate to the `PluginTests` directory
+3. Run tests using Product > Test (⌘+U)
+
+The tests cover core functionality including audio asset initialization, playback, volume control, fade effects, and more. See the [test documentation](ios/PluginTests/README.md) for more details.
