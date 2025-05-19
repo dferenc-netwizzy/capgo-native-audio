@@ -507,7 +507,7 @@
       },
       {
         "name": "addListener",
-        "signature": "(eventName: 'complete', listenerFunc: CompletedListener) => Promise<PluginListenerHandle>",
+        "signature": "(eventName: \"complete\", listenerFunc: CompletedListener) => Promise<PluginListenerHandle>",
         "parameters": [
           {
             "name": "eventName",
@@ -524,7 +524,7 @@
         "tags": [
           {
             "name": "since",
-            "text": "5.0.0\r\nreturn {@link CompletedEvent}"
+            "text": "5.0.0\nreturn {@link CompletedEvent}"
           }
         ],
         "docs": "Listen for complete event",
@@ -536,7 +536,7 @@
       },
       {
         "name": "addListener",
-        "signature": "(eventName: 'currentTime', listenerFunc: CurrentTimeListener) => Promise<PluginListenerHandle>",
+        "signature": "(eventName: \"currentTime\", listenerFunc: CurrentTimeListener) => Promise<PluginListenerHandle>",
         "parameters": [
           {
             "name": "eventName",
@@ -553,10 +553,10 @@
         "tags": [
           {
             "name": "since",
-            "text": "6.5.0\r\nreturn {@link CurrentTimeEvent}"
+            "text": "6.5.0\nreturn {@link CurrentTimeEvent}"
           }
         ],
-        "docs": "Listen for current time updates\r\nEmits every 100ms while audio is playing",
+        "docs": "Listen for current time updates\nEmits every 100ms while audio is playing",
         "complexTypes": [
           "PluginListenerHandle",
           "CurrentTimeListener"
@@ -632,7 +632,7 @@
         {
           "name": "assetPath",
           "tags": [],
-          "docs": "Path to the audio file, relative path of the file, absolute url (file://) or remote url (https://)\r\nSupported formats:\r\n- MP3, WAV (all platforms)\r\n- M3U8/HLS streams (iOS and Android)",
+          "docs": "Path to the audio file, relative path of the file, absolute url (file://) or remote url (https://)\nSupported formats:\n- MP3, WAV (all platforms)\n- M3U8/HLS streams (iOS and Android)",
           "complexTypes": [],
           "type": "string"
         },
@@ -660,7 +660,7 @@
         {
           "name": "isUrl",
           "tags": [],
-          "docs": "Is the audio file a URL, pass true if assetPath is a `file://` url\r\nor a streaming URL (m3u8)",
+          "docs": "Is the audio file a URL, pass true if assetPath is a `file://` url\nor a streaming URL (m3u8)",
           "complexTypes": [],
           "type": "boolean | undefined"
         }

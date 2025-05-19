@@ -1,5 +1,5 @@
-import { WebPlugin } from '@capacitor/core';
-import { AudioAsset } from './audio-asset';
+import { WebPlugin } from "@capacitor/core";
+import { AudioAsset } from "./audio-asset";
 export class NativeAudioWeb extends WebPlugin {
     constructor() {
         super();
@@ -26,10 +26,10 @@ export class NativeAudioWeb extends WebPlugin {
     async getDuration(options) {
         const audio = this.getAudioAsset(options.assetId).audio;
         if (Number.isNaN(audio.duration)) {
-            throw 'no duration available';
+            throw "no duration available";
         }
         if (!Number.isFinite(audio.duration)) {
-            throw 'duration not available => media resource is streaming';
+            throw "duration not available => media resource is streaming";
         }
         return { duration: audio.duration };
     }
@@ -47,26 +47,27 @@ export class NativeAudioWeb extends WebPlugin {
     async preload(options) {
         var _a;
         if (NativeAudioWeb.AUDIO_ASSET_BY_ASSET_ID.has(options.assetId)) {
-            throw 'AssetId already exists. Unload first if like to change!';
+            throw "AssetId already exists. Unload first if like to change!";
         }
         if (!((_a = options.assetPath) === null || _a === void 0 ? void 0 : _a.length)) {
-            throw 'no assetPath provided';
+            throw "no assetPath provided";
         }
-        if (!options.isUrl && !new RegExp('^/?' + NativeAudioWeb.FILE_LOCATION).test(options.assetPath)) {
-            const slashPrefix = options.assetPath.startsWith('/') ? '' : '/';
+        if (!options.isUrl &&
+            !new RegExp("^/?" + NativeAudioWeb.FILE_LOCATION).test(options.assetPath)) {
+            const slashPrefix = options.assetPath.startsWith("/") ? "" : "/";
             options.assetPath = `${NativeAudioWeb.FILE_LOCATION}${slashPrefix}${options.assetPath}`;
         }
         const audio = new Audio(options.assetPath);
         audio.autoplay = false;
         audio.loop = false;
-        audio.preload = 'auto';
+        audio.preload = "auto";
         if (options.volume) {
             audio.volume = options.volume;
         }
         NativeAudioWeb.AUDIO_ASSET_BY_ASSET_ID.set(options.assetId, new AudioAsset(audio));
     }
     onEnded(assetId) {
-        this.notifyListeners('complete', { assetId });
+        this.notifyListeners("complete", { assetId });
     }
     async play(options) {
         const { assetId, time = 0, volume = 1 } = options;
@@ -75,7 +76,7 @@ export class NativeAudioWeb extends WebPlugin {
         audio.volume = volume;
         audio.loop = false;
         audio.currentTime = time;
-        audio.addEventListener('ended', () => this.onEnded(assetId), {
+        audio.addEventListener("ended", () => this.onEnded(assetId), {
             once: true,
         });
         return audio.play();
@@ -99,15 +100,15 @@ export class NativeAudioWeb extends WebPlugin {
         NativeAudioWeb.AUDIO_ASSET_BY_ASSET_ID.delete(options.assetId);
     }
     async setVolume(options) {
-        if (typeof (options === null || options === void 0 ? void 0 : options.volume) !== 'number') {
-            throw 'no volume provided';
+        if (typeof (options === null || options === void 0 ? void 0 : options.volume) !== "number") {
+            throw "no volume provided";
         }
         const audio = this.getAudioAsset(options.assetId).audio;
         audio.volume = options.volume;
     }
     async setRate(options) {
-        if (typeof (options === null || options === void 0 ? void 0 : options.rate) !== 'number') {
-            throw 'no rate provided';
+        if (typeof (options === null || options === void 0 ? void 0 : options.rate) !== "number") {
+            throw "no rate provided";
         }
         const audio = this.getAudioAsset(options.assetId).audio;
         audio.playbackRate = options.rate;
@@ -128,15 +129,15 @@ export class NativeAudioWeb extends WebPlugin {
         return NativeAudioWeb.AUDIO_ASSET_BY_ASSET_ID.get(assetId);
     }
     checkAssetId(assetId) {
-        if (typeof assetId !== 'string') {
-            throw 'assetId must be a string';
+        if (typeof assetId !== "string") {
+            throw "assetId must be a string";
         }
         if (!(assetId === null || assetId === void 0 ? void 0 : assetId.length)) {
-            throw 'no assetId provided';
+            throw "no assetId provided";
         }
     }
 }
-NativeAudioWeb.FILE_LOCATION = '';
+NativeAudioWeb.FILE_LOCATION = "";
 NativeAudioWeb.AUDIO_ASSET_BY_ASSET_ID = new Map();
 const NativeAudio = new NativeAudioWeb();
 export { NativeAudio };

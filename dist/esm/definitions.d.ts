@@ -1,4 +1,4 @@
-import type { PluginListenerHandle } from '@capacitor/core';
+import type { PluginListenerHandle } from "@capacitor/core";
 export interface CompletedEvent {
     /**
      * Emit when a play completes
@@ -244,7 +244,7 @@ export interface NativeAudio {
      * @since 5.0.0
      * return {@link CompletedEvent}
      */
-    addListener(eventName: 'complete', listenerFunc: CompletedListener): Promise<PluginListenerHandle>;
+    addListener(eventName: "complete", listenerFunc: CompletedListener): Promise<PluginListenerHandle>;
     /**
      * Listen for current time updates
      * Emits every 100ms while audio is playing
@@ -252,7 +252,7 @@ export interface NativeAudio {
      * @since 6.5.0
      * return {@link CurrentTimeEvent}
      */
-    addListener(eventName: 'currentTime', listenerFunc: CurrentTimeListener): Promise<PluginListenerHandle>;
+    addListener(eventName: "currentTime", listenerFunc: CurrentTimeListener): Promise<PluginListenerHandle>;
     /**
      * Clear the audio cache for remote audio files
      * @since 6.5.0

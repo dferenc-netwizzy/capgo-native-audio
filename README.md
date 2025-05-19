@@ -471,7 +471,7 @@ Check if an audio file is playing
 ### addListener('complete', ...)
 
 ```typescript
-addListener(eventName: 'complete', listenerFunc: CompletedListener) => Promise<PluginListenerHandle>
+addListener(eventName: "complete", listenerFunc: CompletedListener) => Promise<PluginListenerHandle>
 ```
 
 Listen for complete event
@@ -491,7 +491,7 @@ return {@link CompletedEvent}
 ### addListener('currentTime', ...)
 
 ```typescript
-addListener(eventName: 'currentTime', listenerFunc: CurrentTimeListener) => Promise<PluginListenerHandle>
+addListener(eventName: "currentTime", listenerFunc: CurrentTimeListener) => Promise<PluginListenerHandle>
 ```
 
 Listen for current time updates
